@@ -64,11 +64,11 @@
 }
 
 .header__image {
-  z-index: 1;
+  z-index: -1;
   max-width: 636px;
   position: absolute;
   right: 20px;
-  bottom: 135px;
+  top: 135px;
 }
 
 .header__footer {
@@ -290,7 +290,7 @@
   border-radius: 6px;
   padding: 32px 40px 20px 32px;
   box-sizing: border-box;
-  max-width: 360px;
+  width: 360px;
   height: 420px;
 }
 
@@ -474,7 +474,7 @@
 }
 
 .footer__column-link:hover {
-  color: #1f69c9;
+  color: #c1c1c1;
 }
 
 .footer__social-icon {
