@@ -21,7 +21,7 @@
 .nav {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: top;
 }
 
 .logo {
@@ -31,11 +31,11 @@
 
 .nav__links {
   display: flex;
-  align-items: center;
   gap: 20px;
   list-style: none;
   padding: 0;
   margin-top: 8px;
+  margin-bottom: 0;
 }
 
 .nav__link {
@@ -102,6 +102,7 @@
   align-items: start;
   justify-content: space-between;
   box-sizing: border-box;
+  background-color: #f2f2f2;
 }
 
 .events__content {
@@ -191,35 +192,28 @@
 }
 
 .person_name_feynman {
-  position: absolute;
   top: -30px;
   left: 319px;
 }
 
 .person_name_burbidge {
-  position: absolute;
   top: 96px;
   right: 125px;
 }
 
 .person_name_cannon {
-  position: absolute;
   bottom: 18px;
   right: 216px;
-  display: flex;
   flex-direction: column-reverse;
 }
 
 .person_name_mitchell {
-  position: absolute;
   bottom: 82px;
   left: 142px;
-  display: flex;
   flex-direction: column-reverse;
 }
 
 .person_name_tarter {
-  position: absolute;
   top: 79px;
   left: 159px;
 }
@@ -250,6 +244,7 @@
   background-image: url(/images/staff_picks_background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   padding-top: 100px;
   padding-bottom: 140px;
 }
@@ -277,6 +272,7 @@
   display: flex;
   max-width: 760px;
   margin-top: 68px;
+  margin-bottom: 0;
   justify-content: center;
   flex-wrap: wrap;
   gap: 40px 40px;
@@ -342,7 +338,6 @@
   padding: 0;
   margin: 100px auto 0;
   display: flex;
-  max-width: 1080px;
   justify-content: center;
   align-items: flex-start;
   gap: 40px;
@@ -350,8 +345,8 @@
 
 .step {
   display: flex;
-  max-width: 220px;
-  flex-wrap: wrap;
+  flex-basis: 220px;
+  flex-direction: column;
 }
 
 .step__title {
@@ -427,11 +422,11 @@
   padding: 60px 102px 60px 80px;
   font-size: 16px;
   line-height: 20px;
+  min-height: 224px;
 }
 
 .footer__columns {
   display: flex;
-  min-height: 224px;
 }
 
 .footer__column_content_hours {
@@ -455,9 +450,11 @@
 
 .footer__list-item {
   margin-bottom: 16px;
+}
+
+.footer__list-item:last-child {
+  margin-bottom: 0;
   list-style-type: none;
-  display: flex;
-  align-items: center;
 }
 
 .footer__column-heading {
@@ -469,8 +466,6 @@
   font-size: 16px;
   line-height: 20px;
   text-decoration: none;
-  display: flex;
-  flex-direction: row-reverse;
 }
 
 .footer__column-link:hover {
@@ -484,6 +479,6 @@
 }
 
 .footer__copyright {
-  margin: 0;
+  margin-top: 108px;
   color: white;
 }
